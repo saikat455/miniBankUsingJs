@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center text-3xl mt-2">Functional <span class="text-red-600 ">Baap-Er-Bank</span></h1>
+
+    <div class="grid grid-cols-3 gap-4 mt-5  w-9/12 m-auto">
+        <div class="bg-indigo-500 p-4 rounded-xl" >
+            <h1 class="text-3xl text-white">Deposit</h1>
+            <h1 class="text-3xl text-white">$ <span id="deposit-money">00</span></h1>
+        </div>
+        <div class="bg-indigo-500 p-4 rounded-xl">
+            <h1 class="text-3xl text-white">Withdraw</h1>
+            <h1 class="text-3xl text-white">$ <span id="withdraw-money">00</span></h1>
+        </div>
+        <div class="bg-indigo-500 p-4 rounded-xl">
+            <h1 class="text-3xl text-white">Balance</h1>
+            <h1 class="text-3xl text-white">$ <span id="balance-total">1240</span></h1>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mt-5  w-1/2 m-auto">
+        <div class="bg-red-400 p-5 rounded-xl">
+            <h1 class="mb-2">Your Deposit</h1>
+            <input id="deposit-field" class="border-2 border-sky-500 rounded-xl px-4" type="text" placeholder="amount you want to deposit"><br>
+            <button id="btn-deposit" class="bg-lime-600 px-2 rounded-xl mt-2 text-white">Deposit</button>
+        </div>
+        <div class="bg-red-400 p-5 rounded-xl">
+            <h1 class="mb-2">Your Deposit</h1>
+            <input id="withdraw-field" class="border-2 border-sky-500 rounded-xl px-4" type="text" placeholder="amount you want to withdraw"><br>
+            <button id="btn-withdraw" class="bg-lime-600 px-2 rounded-xl mt-2 text-white">Withdraw</button>
+        </div>
+    </div>
+
+    <script src="minibankdeposit.js"></script>
+    <script src="minibankwithdraw.js"></script>
+</body>
+</html>
